@@ -23,7 +23,7 @@ public class Program
                     break;
                 }
                 case 1: {
-                    Console.WriteLine("Enter the quantity you want to add: ");
+                    Console.WriteLine("Enter the number of Staffs you want to add: ");
                     int quantity = Int32.Parse(Console.ReadLine());
                     for (int i = 0; i < quantity; i++)
                     {                        

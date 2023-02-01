@@ -21,59 +21,70 @@
                     documentManagement.GetAllDocument();
                     break;
                 }
-                // case 1: {
-                //     Console.WriteLine("Enter the quantity you want to add: ");
-                //     int quantity = Int32.Parse(Console.ReadLine());
-                //     for (int i = 0; i < quantity; i++)
-                //     {                        
-                //         Console.Write("Enter name: ");
-                //         string? name = Console.ReadLine();
-                //         Console.Write("Enter age: ");
-                //         int age = Int32.Parse(Console.ReadLine());
-                //         Console.Write("Enter gender: ");
-                //         string? gender = Console.ReadLine();                   
-                //         Console.Write("Enter address: ");
-                //         string? address = Console.ReadLine();
-                //         Console.WriteLine("====================================");
-                //         Console.WriteLine("||Enter E: To insert new Engineer ||");
-                //         Console.WriteLine("||Enter W: To insert new Worker   ||");
-                //         Console.WriteLine("||Enter P: To insert new Personnel||");
-                //         Console.WriteLine("====================================");
-                //         string? chooseAdd = Console.ReadLine();
-                //         switch (chooseAdd){
-                //             case "E":
-                //             {
-                //                 Console.Write("Enter training: ");
-                //                 string? training = Console.ReadLine();
-                //                 CanBo engineer = new KySu(name,age,gender,address,training);
-                //                 staffManagement.AddStaff(engineer);
-                //                 break;
-                //             }
-                //             case "W":
-                //             {
-                //                 Console.Write("Enter level: ");
-                //                 int level = Int32.Parse(Console.ReadLine());
-                //                 CanBo worker = new CongNhan(name,age,gender,address,level);
-                //                 staffManagement.AddStaff(worker);
-                //                 break;
-                //             }
-                //             case "P":
-                //             {
-                //                 Console.Write("Enter Role: ");
-                //                 string? role = Console.ReadLine();
-                //                 CanBo personnel = new NhanVien(name,age,gender,address,role);
-                //                 staffManagement.AddStaff(personnel);
-                //                 break;
-                //             }
-                //         }
-                //     }
-                //     staffManagement.GetAllCanBos();
-                //     break;
-                // }
+                case 4:
+                {
+                    Console.WriteLine("Enter type to search: ");
+                    string? type = Console.ReadLine();
+                    documentManagement.SearchDocumentsByTypes(type);
+                    break;
+                }
+                case 1: {
+                    Console.WriteLine("Enter the number of Documents you want to add: ");
+                    int quantity = Int32.Parse(Console.ReadLine());
+                    for (int i = 0; i < quantity; i++)
+                    {                        
+                        Console.Write("Enter Id of Document: ");
+                        string? id = Console.ReadLine();
+                        Console.Write("Enter Name of Publisher: ");
+                        string? namePublisher = Console.ReadLine();
+                        Console.Write("Enter Number of Versions: ");
+                        int versions = Int32.Parse(Console.ReadLine());                   
+                        Console.WriteLine("======================================");
+                        Console.WriteLine("||Enter B: To insert new Book       ||");
+                        Console.WriteLine("||Enter M: To insert new Megazine   ||");
+                        Console.WriteLine("||Enter N: To insert new Newspaper  ||");
+                        Console.WriteLine("======================================");
+                        string? chooseAdd = Console.ReadLine();
+                        switch (chooseAdd){
+                            case "B":
+                            {
+                                Console.Write("Enter Actor Name: ");
+                                string? actorName = Console.ReadLine();
+                                Console.Write("Enter Number of Pages: ");
+                                int pages = Int32.Parse(Console.ReadLine());
+                                Documents addBook = new Book(id, namePublisher, versions, actorName, pages);
+                                documentManagement.AddDocuments(addBook);
+                                break;
+                            }
+                            case "M":
+                            {
+                                Console.Write("Enter Chapter: ");
+                                int chapter = Int32.Parse(Console.ReadLine());
+                                Console.Write("Enter Release Month: ");
+                                int month = Int32.Parse(Console.ReadLine());
+                                Documents addMagazine = new Magazine(id, namePublisher, versions, chapter, month);
+                                documentManagement.AddDocuments(addMagazine);
+                                break;
+                            }
+                            case "N":
+                            {
+                                Console.Write("Enter Release Date: ");
+                                string? releaseDate = Console.ReadLine();
+                                Documents addNewspaper = new Newspaper(id, namePublisher, versions, releaseDate);
+                                documentManagement.AddDocuments(addNewspaper);
+                                break;
+                            }
+                        }
+                    }
+                    documentManagement.GetAllDocument();
+                    break;
+                }
                 case 2: {
                     Console.WriteLine("Enter Id for Delete: ");
-                    int idDocs = Int32.Parse(Console.ReadLine());
+                    string? idDocs = Console.ReadLine();
                     documentManagement.RemoveDocuments(idDocs);
+                    Console.WriteLine("List after delete");
+                    documentManagement.GetAllDocument();
                     break;
                 }
                 default:

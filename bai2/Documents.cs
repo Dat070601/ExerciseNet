@@ -1,9 +1,9 @@
 public class Documents{
     
-    public int Id { get; set; } 
+    public string? Id { get; set; } 
     public string? Publisher { get; set; }
-    public string? Versions { get; set; }
-    public Documents(int id, string? publisher, string? versions)
+    public int Versions { get; set; }
+    public Documents(string id, string? publisher, int versions)
     {
         Id = id;
         Publisher = publisher;

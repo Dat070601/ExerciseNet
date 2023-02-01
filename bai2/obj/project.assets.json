@@ -8,27 +8,25 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dat.dinhhoang\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\LinQ\\bai2\\bai2.csproj",
+      "projectUniqueName": "D:\\ThucTap\\ExerciseNet\\bai2\\bai2.csproj",
       "projectName": "bai2",
-      "projectPath": "D:\\LinQ\\bai2\\bai2.csproj",
-      "packagesPath": "C:\\Users\\dat.dinhhoang\\.nuget\\packages\\",
-      "outputPath": "D:\\LinQ\\bai2\\obj\\",
+      "projectPath": "D:\\ThucTap\\ExerciseNet\\bai2\\bai2.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\ThucTap\\ExerciseNet\\bai2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dat.dinhhoang\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2": {}
       },
       "frameworks": {
         "net6.0": {
@@ -60,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }

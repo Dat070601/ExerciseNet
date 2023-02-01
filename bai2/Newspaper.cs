@@ -1,7 +1,7 @@
 class Newspaper : Documents
 {
     public string? DateTime { get; set; }
-    public Newspaper(int id, string? publisher, string? versions, string? dateTime) : base(id, publisher, versions)
+    public Newspaper(string id, string? publisher, int versions, string? dateTime) : base(id, publisher, versions)
     {
         DateTime = dateTime;
     }

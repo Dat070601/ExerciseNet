@@ -2,7 +2,8 @@ class Book : Documents
 {
     public string? ActorName { get; set; }
     public int Pages { get; set; }
-    public Book(int id, string? publisher, string? versions, string? actorName, int pages) : base(id, publisher, versions)
+    public List<Documents>? ListDocuments;
+    public Book(string id, string? publisher, int versions, string? actorName, int pages) : base(id, publisher, versions)
     {
         ActorName = actorName;
         Pages = pages;

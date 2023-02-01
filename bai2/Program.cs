@@ -14,20 +14,6 @@
             int choose = Int32.Parse(Console.ReadLine());
             switch (choose)
             {
-                case 5:
-                    return;
-                case 3:
-                {
-                    documentManagement.GetAllDocument();
-                    break;
-                }
-                case 4:
-                {
-                    Console.WriteLine("Enter type to search: ");
-                    string? type = Console.ReadLine();
-                    documentManagement.SearchDocumentsByTypes(type);
-                    break;
-                }
                 case 1: {
                     Console.WriteLine("Enter the number of Documents you want to add: ");
                     int quantity = Int32.Parse(Console.ReadLine());
@@ -87,6 +73,20 @@
                     documentManagement.GetAllDocument();
                     break;
                 }
+                case 3:
+                {
+                    documentManagement.GetAllDocument();
+                    break;
+                }
+                case 4:
+                {
+                    Console.WriteLine("Enter type to search: ");
+                    string? type = Console.ReadLine();
+                    documentManagement.SearchDocumentsByTypes(type);
+                    break;
+                }
+                case 5:
+                    return;
                 default:
                 {
                     Console.WriteLine("Error");

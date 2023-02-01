@@ -15,13 +15,6 @@ public class Program
             int choose = Int32.Parse(Console.ReadLine());
             switch (choose)
             {
-                case 4:
-                    return;
-                case 3:
-                {
-                    staffManagement.GetAllCanBos();
-                    break;
-                }
                 case 1: {
                     Console.WriteLine("Enter the number of Staffs you want to add: ");
                     int quantity = Int32.Parse(Console.ReadLine());
@@ -77,6 +70,13 @@ public class Program
                     staffManagement.SearchedStaffByName(name);
                     break;
                 }
+                case 3:
+                {
+                    staffManagement.GetAllCanBos();
+                    break;
+                }
+                case 4:
+                    return;
                 default:
                 {
                     Console.WriteLine("Error");

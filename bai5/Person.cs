@@ -5,7 +5,6 @@ public class Person
     public string IdCard { get; set; }
     public int DateUse { get; set; }
     public Room Room { get; set; }
-
     public Person(string name, int age, string idCard, int dateUse, Room room)
     {
         Name = name;

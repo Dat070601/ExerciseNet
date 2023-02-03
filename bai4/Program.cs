@@ -57,7 +57,7 @@
                             }
                         }
                     }
-                    if(n < record)
+                    else if(n < record)
                     {
                         Console.WriteLine(n +"/"+record + " families!");
                         for(int i = 0; i < n; i++){
@@ -93,6 +93,9 @@
                                 Console.WriteLine("Exit");
                                 break;
                         }
+                    }
+                    else if (record == 0){
+                        Console.WriteLine("No families in town! ");
                     }
                     else{
                         Console.WriteLine("There are "+record + " families in a town.");

@@ -1,0 +1,15 @@
+D:\LinQ\bai13\bin\Debug\net6.0\bai13.exe
+D:\LinQ\bai13\bin\Debug\net6.0\bai13.deps.json
+D:\LinQ\bai13\bin\Debug\net6.0\bai13.runtimeconfig.json
+D:\LinQ\bai13\bin\Debug\net6.0\bai13.dll
+D:\LinQ\bai13\bin\Debug\net6.0\bai13.pdb
+D:\LinQ\bai13\obj\Debug\net6.0\bai13.csproj.AssemblyReference.cache
+D:\LinQ\bai13\obj\Debug\net6.0\bai13.GeneratedMSBuildEditorConfig.editorconfig
+D:\LinQ\bai13\obj\Debug\net6.0\bai13.AssemblyInfoInputs.cache
+D:\LinQ\bai13\obj\Debug\net6.0\bai13.AssemblyInfo.cs
+D:\LinQ\bai13\obj\Debug\net6.0\bai13.csproj.CoreCompileInputs.cache
+D:\LinQ\bai13\obj\Debug\net6.0\bai13.dll
+D:\LinQ\bai13\obj\Debug\net6.0\refint\bai13.dll
+D:\LinQ\bai13\obj\Debug\net6.0\bai13.pdb
+D:\LinQ\bai13\obj\Debug\net6.0\bai13.genruntimeconfig.cache
+D:\LinQ\bai13\obj\Debug\net6.0\ref\bai13.dll
